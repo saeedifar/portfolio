@@ -68,7 +68,7 @@
     // Controls whether the editor shows CodeLens.
     "editor.codeLens": true,
     // Controls the font family for CodeLens.
-    "editor.codeLensFontFamily": "",
+    "editor.codeLensFontFamily": "'Dank Mono',agave",
     // Controls the font size in pixels for CodeLens. When set to `0`, 90% of `editor.fontSize` is used.
     "editor.codeLensFontSize": 0,
     // Controls whether the editor should render the inline color decorators and color picker.
@@ -136,7 +136,7 @@
     //  - indentation: Use the indentation-based folding strategy.
     "editor.foldingStrategy": "auto",
     // Controls the font family.
-    "editor.fontFamily": "MonoLisa, 'Courier New', monospace",
+    "editor.fontFamily": "'DankMono-Italic','Dank Mono',agave",
     // Configures font ligatures or font features. Can be either a boolean to enable/disable ligatures or a string for the value of the CSS 'font-feature-settings' property.
     "editor.fontLigatures": true,
     // Controls the font size in pixels.
@@ -624,7 +624,7 @@
     // Overrides colors from the currently selected color theme.
     "workbench.colorCustomizations": {},
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Dark-Dracula",
+    "workbench.colorTheme": "monokai-best",
     // Controls the number of recently used commands to keep in history for the command palette. Set to 0 to disable command history.
     "workbench.commandPalette.history": 50,
     // Controls whether the last typed input to the command palette should be restored when opening it the next time.
@@ -750,7 +750,7 @@
     //  - null: No file icons
     //  - vs-minimal
     //  - vs-seti
-    "workbench.iconTheme": "vs-seti",
+    "workbench.iconTheme": "material-icon-theme",
     // Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.
     "workbench.list.automaticKeyboardNavigation": true,
     // Scrolling speed multiplier when pressing `Alt`.
@@ -2420,7 +2420,11 @@
         "editor.unicodeHighlight.ambiguousCharacters": false,
         "editor.unicodeHighlight.invisibleCharacters": false,
         "editor.wordWrap": "on",
-        "editor.quickSuggestions": false
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
     },
     // Configure settings to be overridden for [plaintext] language.
     "[plaintext]": {
